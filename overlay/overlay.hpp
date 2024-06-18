@@ -358,18 +358,18 @@ class OverlayImpl : public Overlay {
     return 10;
   }
   static td::uint32 max_neighbours() {
-    return 5;
+    return 30;
   }
   static td::uint32 max_encryptors() {
     return 16;
   }
 
   static td::uint32 max_peers() {
-    return 20;
+    return 30;
   }
 
   static td::uint32 nodes_to_send() {
-    return 4;
+    return 20;
   }
 
   static BroadcastHash get_broadcast_hash(adnl::AdnlNodeIdShort &src, td::Bits256 &data_hash) {
